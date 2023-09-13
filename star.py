@@ -14,6 +14,10 @@ def print_scare(n):
      for i in range(n-1):
           print(" "* (n-i-1) + "*" + " "* (n*4 +i*2 + 1) + "*")
      print("*"*(n*2+1) + " "* (n*2 -1) + "*"*(n*2+1))
+     #Made tail
+     for i in range(n-2, -1, -1):
+          print(" "* (n*2) + " "*(n-i-1) + "*" + " "*((i+1)*2-1) + "*")
+     print(" "*(n*3) + "*")
 
 
 # Check args len
