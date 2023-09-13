@@ -23,7 +23,7 @@ def print_scare(n):
 # Check args len
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0])
+    print("Usage:", sys.argv[0], flush=sys.stderr)
     exit(-1)
 
 n = 0
@@ -32,12 +32,12 @@ n = 0
 try:
     n = int(sys.argv[1])
 except:
-    print("Usage:", sys.argv[0])
+    print("Usage:", sys.argv[0], flush=sys.stderr)
     exit(-1)
 
 # Check n is positive
 if n < 0:
-        print("Usage:", sys.argv[0])
+        print("Usage:", sys.argv[0], flush=sys.stderr)
         exit(-1)
 
 if n == 0:
