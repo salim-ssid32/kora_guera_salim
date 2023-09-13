@@ -3,10 +3,18 @@ import sys
 
 
 def print_scare(n):
-     #Made head
+     # Made head
      print(" "*(n*3) + "*")
      for i in range(n -1):
           print(" "* (n*2) + " "*(n-i-1) + "*" + " "*((i+1)*2-1) + "*")
+     # Made body
+     print("*"*(n*2+1) + " "* (n*2 -1) + "*"*(n*2+1))
+     for i in range(n):
+          print( " "*(i+1) + "*" + " "* (n*6-i*2-3) + "*")
+     for i in range(n-1):
+          print(" "* (n-i-1) + "*" + " "* (n*4 +i*2 + 1) + "*")
+     print("*"*(n*2+1) + " "* (n*2 -1) + "*"*(n*2+1))
+
 
 # Check args len
 
