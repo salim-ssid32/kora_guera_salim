@@ -1,5 +1,10 @@
 import sys
 
+
+
+def print_scare(n):
+     pass
+
 # Check args len
 
 if len(sys.argv) != 2:
@@ -20,6 +25,11 @@ if n < 0:
         print("Usage:", sys.argv[0])
         exit(-1)
 
+if n == 0:
+     exit(0)
+
+
+print_scare(n)
 
 
 
